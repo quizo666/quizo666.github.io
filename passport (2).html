@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Изменяем Кириллицу на латиницу</title>
+  <link rel="stylesheet" href="../src/css/index.css" />
+
+
+
+<body>
+
+  <h1 id="passport">Паспорт</h1>
+  <div id="passport-bg">
+    <h5 id="rus-fed" class="big-gap">РОССИЙСКАЯ ФЕДЕРАЦИЯ</h5>
+    <p class="given-out-1"> ГУ МВД </p>
+    <p class="given-out-2">ПО Г. МОСКВЕ</p>
+    <p class="date-of-rec">09.09.2010</p>
+    <p class="subdiv-code">730-876</p>
+
+    <img class="passport-photo" src="../src/img/worker1-pass.png">
+    <p class="surname">ПЕТРОВ</p>
+    <p class="full-name"> АНТОН </p>
+    <p class="fath-name">АЛЕКСАНДРОВИЧ</p>
+    <p class="sex">МУЖ.</p>
+    <p class="date-birth">08.08.1990</p>
+    <p class="city-birth">ГОР. НОВОСИБИРСК</p>
+    <p class="region-birth">НОВОСИБИРСКОЙ ОБЛ.</p>
+  </div>
+  <div>
+    <button type="button" class="button" id="changeLanguageButton"> Смена языка </button>
+  </div>
+  <script>
+    document.getElementById('changeLanguageButton').addEventListener('click', function () {
+      window.location.href = 'english_passport.html';
+    });
+  </script>
+
+  <h3> DOM_JS. Считываем информацию из DOM </h3>
+  <img src="./img/console.png" height="300px">
+</body>
+
+</html>
